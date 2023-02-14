@@ -31,11 +31,11 @@ const RecommendList = () => {
   ];
   return (
     <div className='relative top-10 max-w-ms'>
-      <p className='font-semibold text-sm p-10'>
+      <p className='font-semibold text-2xl p-10'>
         <span className='text-mw'>미왕이</span> 님을 위한 추천상품이에요.
       </p>
       {/* 추천 상품 리스트 보여주기 */}
-      <div className='SlickContainer w-80 h-36 ml-15 m-auto '>
+      <div className='SlickContainer w-80 h-36 ml-15 m-auto box-border'>
         <Slick>
           {items.map((item, index) => (
             <div key={index} className='shadow-default'>

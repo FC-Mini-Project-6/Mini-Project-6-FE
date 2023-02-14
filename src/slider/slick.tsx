@@ -24,8 +24,10 @@ function Slick({
     () => ({
       dots: true,
       fade: true,
+      arrows: false,
       infinite: loop,
       speed: speed,
+      draggable: true,
       slidesToShow: 1,
       autoplay: Boolean(autoplay),
       autoplaySpeed: typeof autoplay === 'boolean' ? 3000 : autoplay,
