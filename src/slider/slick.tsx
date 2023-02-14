@@ -1,9 +1,8 @@
 import { useMemo } from 'react';
 import Slider, { Settings } from 'react-slick';
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import '../assets/index.css';
 interface sliderProps {
   /** 슬라이더 아이템 요소 */
   children: React.ReactNode;
@@ -35,7 +34,9 @@ function Slick({
   );
   return (
     <div>
-      <Slider {...settings}>{children}</Slider>
+      <Slider {...settings} dotsClass='test-css'>
+        {children}
+      </Slider>
     </div>
   );
 }

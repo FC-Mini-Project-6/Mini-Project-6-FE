@@ -20,6 +20,14 @@ const RecommendList = () => {
       item: 'http://placehold.it/1200x400/00ffff',
       name: '이미지03',
     },
+    {
+      item: 'http://placehold.it/1200x400/00ffff',
+      name: '이미지04',
+    },
+    {
+      item: 'http://placehold.it/1200x400/00ffff',
+      name: '이미지05',
+    },
   ];
   return (
     <div className='relative top-10 max-w-ms'>
@@ -27,7 +35,7 @@ const RecommendList = () => {
         <span className='text-mw'>미왕이</span> 님을 위한 추천상품이에요.
       </p>
       {/* 추천 상품 리스트 보여주기 */}
-      <div className='SlickContainer w-80 ml-15 m-auto box-border'>
+      <div className='SlickContainer w-80 h-36 ml-15 m-auto '>
         <Slick>
           {items.map((item, index) => (
             <div key={index} className='shadow-default'>
