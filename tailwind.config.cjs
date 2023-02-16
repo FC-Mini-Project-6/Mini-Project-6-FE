@@ -1,13 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  plugins: [require('daisyui')],
   content: [
     './index.html',
-    './src/*.{js,ts,jsx,tsx}',
+    './src/*.tsx',
     './src/**/*.{js,ts,jsx,tsx}',
     './src/**/**/*.{js,ts,jsx,tsx}',
     './node_modules/tailwind-datepicker-react/dist/**/*.js',
-    './node_modules/daisyui/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     colors: {
@@ -28,15 +26,12 @@ module.exports = {
       'mw-dGray': '#a1a1a1',
       'mw-gray': '#c8c7cc',
       'mw-lGray': '#f9f8f8',
-      white: '#fff',
-      black: '#000',
-      alert: '#FF0066',
     },
     fontFamily: {
       main: ['Pretendard Variable', 'Apple SD Gothic Neo', 'sans-serif'],
     },
     screens: {
-      main: '480px',
+      max: '480px',
     },
     boxShadow: {
       default: '0px 8px 20px rgba(0, 0, 0, 0.1)',
