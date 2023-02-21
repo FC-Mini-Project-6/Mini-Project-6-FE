@@ -22,6 +22,7 @@ const allProduct = (props: props) => {
       {lists.map((item, i) => (
         <ListBox
           key={i}
+          snq={item.snq}
           title={item.loanName}
           desc={item.loanDescription}
           target={item.loanTarget}

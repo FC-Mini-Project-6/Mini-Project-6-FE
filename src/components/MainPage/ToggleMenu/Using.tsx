@@ -5,7 +5,11 @@ const Using = (props: props) => {
   return (
     <div className='flex flex-col w-[280px] gap-3'>
       {usingList.map((list) => {
-        return <div className=''>{list}</div>;
+        return (
+          <div key={list} className=''>
+            {list}
+          </div>
+        );
       })}
     </div>
   );

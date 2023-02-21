@@ -5,7 +5,11 @@ const Target = (props: props) => {
   return (
     <div className='flex flex-col w-[280px] gap-3'>
       {targetList.map((list) => {
-        return <div className=''>{list}</div>;
+        return (
+          <div key={list} className=''>
+            {list}
+          </div>
+        );
       })}
     </div>
   );

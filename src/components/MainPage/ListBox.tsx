@@ -1,6 +1,9 @@
-import React from 'react';
+import { current } from '@reduxjs/toolkit';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { addCartList } from '../../api/axios';
 type props = {
+  snq: string;
   title: string;
   desc: string;
   target: string;
@@ -21,7 +24,10 @@ const ListBox = (props: props) => {
       <p className='loanBaseRate text-xs absolute top-40 left-8'>
         {props.baseRate}
       </p>
-      <button className='absolute right-12 bottom-8 rounded-default bg-mw w-16 h-8'>
+      <button
+        className='absolute right-12 bottom-8 rounded-default bg-mw w-16 h-8'
+        onClick={() => addCartList(props.snq)}
+      >
         추가
       </button>
     </div>
