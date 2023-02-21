@@ -12,7 +12,7 @@ const Header = (props: Props) => {
     setisOpen((isOpen) => !isOpen);
   };
   return (
-    <div className='flex relative m-auto h-[100px] w-[375px] items-center justify-center'>
+    <div className='flex relative m-auto h-[100px] w-full items-center justify-center'>
       <div
         className='inset-x-0 top-0 text-center cursor-pointer'
         onClick={() => navigate('/')}

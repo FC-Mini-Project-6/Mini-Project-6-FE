@@ -7,11 +7,13 @@ type props = {
   baseRate: string;
 };
 const ListBox = (props: props) => {
+  let description = props.desc;
+  let replaceDesc = description.replace('<br/>/g', '');
   return (
-    <div className='boxContainer bg-mw-lGray relative w-96 h-52 mx-auto my-3 shadow-default rounded-default text-left'>
+    <div className='boxContainer bg-mw-lGray relative w-[350px] h-52 mx-auto my-3 shadow-default rounded-default text-left'>
       <p className='loanTitle text-lg absolute top-7 left-8'>{props.title}</p>
       <p className='loanDesc text-xs absolute top-20 left-8 w-72'>
-        {props.desc}
+        {replaceDesc.slice(0, 80)}...
       </p>
       <p className='loanTarget text-xs absolute top-32 left-8'>
         {props.target}
