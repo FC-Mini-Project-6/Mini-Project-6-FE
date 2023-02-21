@@ -20,7 +20,7 @@ const ListBox = (props: props) => {
         {props.baseRate}
       </p>
       <button className='absolute right-12 bottom-8 rounded-default bg-mw w-16 h-8'>
-        <Link to='/'>상담</Link>
+        추가
       </button>
     </div>
   );
