@@ -78,6 +78,7 @@ export const signUp: AuthFn = async (name, password, email, phone) => {
       },
     });
     console.log('res.data', res.data);
+    console.log('res', res);
     return res.data;
   } catch (error) {
     if (error instanceof AxiosError) {
