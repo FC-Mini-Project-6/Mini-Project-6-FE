@@ -61,6 +61,7 @@ export interface getProductType {
   baseRate: string;
   ratePercent: string;
 }
+
 export interface ProductList {
   content: getProductType[];
 }
